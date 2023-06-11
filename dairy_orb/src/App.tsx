@@ -35,7 +35,7 @@ function App() {
         <Route path="/Products" element={<ListGroup />} />
       </Routes>
       {
-        count > 3 &&
+        count > 2 &&
         <ul>
           <li>
             <Link to="/Products">Products</Link>

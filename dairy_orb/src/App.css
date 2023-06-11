@@ -5,7 +5,6 @@
   justify-content:center;
   flex-direction:column;
   text-align: center;
-  padding: 20px;
 }
 
 .logo-container {
@@ -51,6 +50,13 @@
   }
 }
 
+@media (prefers-color-scheme: light) {
+  .logo:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 2em darkslategray);
+  }
+}
+
 .card {
   padding: 2em;
   display: flex;
@@ -60,6 +66,7 @@
 
 .read-the-docs {
   color: #888;
+  margin: 0 8em 0 8em;
 }
 
 .read-the-docs > span{

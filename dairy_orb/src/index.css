@@ -41,12 +41,12 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
-  cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:nth-of-type(2):hover{
   border-color: #FDFFF5;
+  cursor: pointer;
 }
 
 @media (prefers-color-scheme: light) {
@@ -54,8 +54,13 @@ button:nth-of-type(2):hover{
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #FDFFF5;
+
+  a {
+    color: #213547;
+  }
+
+  .read-the-docs > span {
+    color: darkslategray;
   }
   button {
     background-color: #f9f9f9;
