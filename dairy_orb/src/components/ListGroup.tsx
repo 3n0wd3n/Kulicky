@@ -1,14 +1,8 @@
-import { Route, Routes, Link } from 'react-router-dom';
-import { useEffect } from 'react';
-import App from '../App';
+import { Link } from 'react-router-dom';
 
 function ListGroup() {
     return (
         <>
-            <Routes>
-                <Route path="/" element={<App />}></Route>
-                <Route path="/Products" element={<ListGroup />} />
-            </Routes>
 
             <ul>
                 <li>
