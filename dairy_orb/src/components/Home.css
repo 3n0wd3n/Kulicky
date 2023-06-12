@@ -89,8 +89,14 @@
   .card {
     padding: 2em;
     display: flex;
-    gap: 2em;
-    flex-direction: column;
+    gap: 1em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card:nth-of-type(2):hover {
+    cursor: pointer;
   }
   
   .read-the-docs {
