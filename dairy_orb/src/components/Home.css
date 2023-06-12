@@ -29,6 +29,35 @@
     z-index: -1;
   }
   
+  .navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .listItem {
+    font-weight: 500;
+    font-family: inherit;
+  }
+
+  .listItem {
+    cursor: pointer;
+  }
+
+  .listItem::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #213547;
+    transition: width .5s ease-in;
+  }
+  
+  .listItem:hover::after {
+    width: 100%;
+  }
   
   .logo:hover {
     cursor: pointer;
@@ -74,4 +103,6 @@
     font-weight: bold;
     color: #f5fff8;
   }
+
+
   

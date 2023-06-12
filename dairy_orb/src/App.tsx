@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/Products" element={<ListGroup />} />
       </Routes>
-      <Home />
     </>
   )
 }

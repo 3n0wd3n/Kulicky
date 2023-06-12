@@ -8,9 +8,6 @@ function ListGroup() {
                 <li>
                     <Link to="/">Home</Link>
                 </li>
-                <li>
-                    <Link to="/Products">Products</Link>
-                </li>
             </ul>
         </>
 

@@ -8,6 +8,16 @@ export default function Home() {
     const [count, setCount] = useState(0);
     return (
         <>
+            {
+                count == 3 &&
+                <ul className="navBar">
+                    <li className="listItem">About us</li>
+                    <li className="listItem">
+                        <Link to="/Products">Products</Link>
+                    </li>
+                    <li className="listItem">Contact</li>
+                </ul>
+            }
             <div>
                 {/* <a href="#" target="_blank" onClick={() => setCount((count) => count + 1)}>
                         <img  src={viteLogo} className="logo" alt="Logo" />
@@ -28,16 +38,8 @@ export default function Home() {
                 </button>
             </div>
             <p className="read-the-docs">
-                A childhood memory that was once a spark instantly turned into a fire of ideas. But even the most unusual ideas sometimes happened only after the <span>third</span> try 😉.
+                A childhood memory that was once a spark instantly turned into a fire of ideas. But even the most unusual ideas sometimes happened only in the <span>third</span> try 😉.
             </p>
-            {
-                count > 2 &&
-                <ul>
-                    <li>
-                        <Link to="/Products">Products</Link>
-                    </li>
-                </ul>
-            }
         </>
     )
 }
