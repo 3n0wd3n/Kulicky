@@ -1,12 +1,11 @@
 import ball from "../assets/ball.svg";
 import milk from "../assets/milk.svg";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import "./Home.css";
 import { FaUndo } from "react-icons/fa";
 
-export default function Home() {
-  const [count, setCount] = useState(0);
+export default function Home({count, setCount}) {
+  
   return (
     <>
       {count == 3 && (
